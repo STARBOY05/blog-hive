@@ -6,10 +6,15 @@ import './MakePost.css';
 
 function MakePost({ isAuth }) {
 
+    // states for posts
     const [post, setPost] = useState({});
+
     // Reference to the collection in the firestore database
     const postCollectionsRef = collection(db, "user-posts");
+    
     const navigate = useNavigate();
+    
+    // handles create post
     const createPost = async () => {
         await addDoc(postCollectionsRef, {
             title: post?.title,
@@ -18,13 +23,12 @@ function MakePost({ isAuth }) {
         })
         navigate("/");
     }
-
+    
     useEffect(() => {
         if (!isAuth) {
             navigate("/login");
         }
     }, [])
-
 
     return (
         <div className='make-post-page'>

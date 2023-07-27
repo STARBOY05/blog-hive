@@ -7,10 +7,11 @@
     align-items: center;
 }
 
-/* GOOGLE BUTTOn */
+/* GOOGLE BUTTON */
 .login-with-google-btn {
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
     padding: 5px 16px 12px 42px;
     border: none;
     border-radius: 3px;
@@ -24,6 +25,7 @@
     background-color: white;
     background-repeat: no-repeat;
     background-position: 12px 11px;
+    border: 1px solid black;
 }
 
 .login-with-google-btn:hover {
@@ -45,4 +47,23 @@
     background-color: #ebebeb;
     box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
     cursor: not-allowed;
+}
+
+.email-password-box {
+    min-width: 20%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }

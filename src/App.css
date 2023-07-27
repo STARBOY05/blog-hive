@@ -19,4 +19,8 @@ a {
   text-decoration: none;
   margin: 10px; 
   font-size: 25px;
+
+  @media screen and (max-width: 575px) {
+    font-size: 16px;
+}
 }
